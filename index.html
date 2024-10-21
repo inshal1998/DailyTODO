@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <h1 class="title">Focus on <span>Today</span></h1>
+    <main>
+        <p class="sub-title">Today
+            <img class="sun-logo" alt="sun" src="./images/Sun.svg" />
+        </p>
+        <p class="desc"></p>
+        <div class="progress-bar-container">
+            <div class="progress-value">
+                <span></span>
+            </div>
+        </div>
+        <p class="error-label">Please set all the 3 goals!</p>
+        <div class="input-container">
+            <div class="input-child-container">
+                <div class="check-box">
+                    <img class="tick" src="./images/check.svg" alt="check" />
+                </div>
+                <input class="input-box" placeholder="Add new Goal..." id="first" />
+            </div>
+            <div class="input-child-container">
+                <div class="check-box">
+                    <img class="tick" src="./images/check.svg" alt="check" />
+                </div>
+                <input class="input-box" placeholder="Add new Goal..." id="second" />
+            </div>
+            <div class="input-child-container">
+                <div class="check-box">
+                    <img class="tick" src="./images/check.svg" alt="check" />
+                </div>
+                <input class="input-box" placeholder="Add new Goal..." id="third" />
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer-text">“Keep Going, You’re making great progress!”</p>
+        </div>
+    </main>
+</body>
+
+</html>

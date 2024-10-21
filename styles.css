@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #48A300;
+    --light-brown: #61481C;
+    --shadow-brown: #48A30012;
+    --white:#FBFBFB;
+    --silver:#858585;
+    --progress-bg:#48A3001A;
+    --shadow:0 0 8px 0px rgba(0, 0, 0, 0.1);
+    --dark-white:#FFFFFF;
+    --place-holder:#D9D9D9;
+    --error-color:#FF5151
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--shadow-brown);
+    margin: 0;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.title {
+    text-align: center;
+    color: var(--green);
+    font-size: 48px;
+}
+
+.title span {
+    color: var(--light-brown);
+}
+
+
+main {
+    background-color: var(--white);
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sun-logo {
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+}
+
+.desc {
+    color: var(--silver);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.progress-bar-container {
+    background-color: var(--progress-bg);
+    padding: 0;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.progress-value {
+    background-color: var(--green);
+    height: 100%;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+}
+
+.progress-value span {
+    color:var(--white);
+    font-size: 12px;
+    overflow: hidden;
+    min-width: max-content;
+}
+
+.input-child-container::placeholder {
+    color: var(--place-holder);
+}
+
+.input-child-container {
+    border: .5px solid #D9D9D9;
+    height: 82px;
+    background-color: var(--dark-white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-top: 21px;
+    display: flex;
+    padding: 0 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.check-box {
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-white);
+}
+
+.input-box {
+    border: none;
+    margin-left: 20px;
+    font-size: 16px;
+    display: flex;
+    flex:1;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-text {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.completed .input-box {
+    color: var(--green);
+    text-decoration-line: line-through;
+}
+
+.completed .check-box {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.completed .tick {
+    display: block;
+}
+
+.tick {
+    display: none;
+}
+
+.error-label {
+    color:var(--error-color);
+    font-size: 14px;
+    display: none;
+}
+.show-error {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    main {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}
