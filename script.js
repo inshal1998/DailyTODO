@@ -59,7 +59,7 @@ inputBox.forEach((input) => {
   });
 
   input.addEventListener("input", (e) => {
-    if (allGoals && allGoals[input.id].isCompleted) {
+    if (allGoals[input.id] && allGoals[input.id].isCompleted) {
       input.value = allGoals[input.id].goal;
     }
 
