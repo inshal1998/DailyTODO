@@ -1,6 +1,6 @@
 # Daily TODO
 
-Daily TODO is built using Vanilla JS where user can add their daily task.
+Daily TODO is built using Vanilla JS where user can add their daily task .
 
 ## Installation
 
